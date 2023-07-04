@@ -24,7 +24,7 @@ export const App = () => {
       case 'bad':
         return setBad(prevState => prevState + 1)
       default:
-        return
+        throw new Error('Unknown action')
     };
   };
 
